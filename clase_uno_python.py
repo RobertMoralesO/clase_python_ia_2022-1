@@ -293,12 +293,57 @@ prom = round(prom, 2)
 print(f'El promedio académico final de las {numero_notas} notas es: {prom} ')
 
 
+# Tipos de Colecciones
+
+# Listas o vectores
+# Tipo de datos mutable y ordenado
+
+a = [2, 3, 4]
+b = [2, True, 'hola', 3.4]
+c = [2, [True, False], ['Hola', 'Mundo'], [2.3, 3.4, 4.6, 7.8]]
+
+for var in c:
+    print (var)
+
+a[0] = 7
+print(b[2])
+
+a = [2, 3, 4]
+a.append(5)  # Agrega el elemento al final de la lista
+a.remove(3)  # Elimina de la lista un elemento por su valor
+a.pop()  # Elimina el último elemento del vector
+a.pop(1)  # Elimina un elemento por posición
+a.clear()  # Elimina todos los elementos del vector
+# del a
+4 in a  # Busca el elemento 4 dentro de a
+len(a)  # Cantidad de elementos de la lista
+
+b = a[:]
+
+# Tuplas
+# Tipo de datos inmutable y ordenado
+
+a = (1, 2, 3, 4)
+print(a[1])
+a = (1, 'hola', True, 4.5)
+a = (1, ['hola', 'Mundo'], True, 4.5)
+a = (1, ['hola', 'Mundo'], (True, False), 4.5)
+4 in a
 
 
+# Set
+# Mutables y NO ordenados
+a = {1, 2, 3, 4}
+a = {7, 2, 1, 5, 9, 9}
 
+# Diccionario
+# Mutable pero no ordenado
 
+a = {'nombre': 'Roberto', 'apellido': 'Morales'}
+a = {1: 'Roberto', 2: 'Morales'}
 
-
+a['nombre']
+a['nombre'] = 'Carlos'
 
 
 
