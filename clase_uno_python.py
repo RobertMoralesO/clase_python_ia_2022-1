@@ -154,6 +154,130 @@ print(f"El valor ahorrado es de: ${descuento:,}")
 print(f"El valor con el descuento aplicado es de: ${valor_final:,}")
 
 
+# Condicionales
+
+# Tabla de verdad
+
+# Tabla del and
+
+print(True and True) # True
+print(True and False) # False
+print(False and True) # False
+print(False and False) #False
+
+# Tabla del or
+
+print(True or True) # True
+print(True or False) # True
+print(False or True) # True
+print(False or False) #False
+
+# Negación
+
+print(not True)
+print(not False)
+
+# Jerarquía de Operaciones
+# 1. Paréntesis y llaves
+# 2. Potencias y Raices
+# 3. Multiplicación y División
+# 4. Sumas y Restar
+
+
+print(True and False and True or 
+     False or True or True) #True
+
+
+print(True and (False and True) 
+      or False or (True or True))
+
+# Estructura if
+x = 6
+if (x > 0):
+    print('1')
+else:
+    print('2')
+    print('3')
+
+if x > 0:
+    print('Mayor que cero')
+elif x == 0:
+    print('Es igual a cero')
+else:
+    print('entró aquí')
+
+# HUA que dada la edad de una persona
+# indique si es mayor o menor de edad
+
+edad = int(input('Digite la edad de la persona: '))
+if edad >= 18:
+    print('Es mayor de edad')
+else:
+    print('Es menor de edad')
+
+
+
+
+# HUA que indique si un estudiante aprobó o reprobó una
+# asignatura teniendo en cuenta que aprueba con mínimo
+# una calificación de 3.0 hasta 5.0
+
+nota = float(input('Digite el nota de la asignatura: '))
+if nota >= 3:
+    print(f'Aprobó la asignatura con una nota de {nota}.')
+else:
+    print(f'Reprobó la asignatura con una nota de {nota}.')
+
+
+# HUA que indique si un estudiante aprobó o reprobó una
+# asignatura teniendo en cuenta que aprueba con mínimo
+# una calificación de 3.0, validando que sea una nota válida
+
+nota = float(input('Digite el nota de la asignatura: '))
+if nota < 0 or nota > 5:
+    print(f'No es una nota válida')
+elif nota >= 3:
+    print(f'Aprobó la asignatura con una nota de {nota}.')
+else:
+    print(f'Reprobó la asignatura con una nota de {nota}.')
+
+# HUA que dado un número n diga si es negativo, positivo o
+# cero.
+
+n = int(input('Digite el valor de n :'))
+if n > 0:
+    print(f'{n} es positivo')
+elif n < 0:
+    print(f'{n} es negativo')
+else:
+    print(f'{n} es cero')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
