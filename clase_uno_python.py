@@ -346,13 +346,100 @@ a['nombre']
 a['nombre'] = 'Carlos'
 
 
+for valor in a:
+    print(valor)
+
+for valor in a.values():
+    print(valor)
+    
+for valor in a.keys():
+    print(valor)
+
+for valor in a.items():
+    print(valor)
+    
+for llave, valor in a.items():
+    print(f'Llave: {llave}, Valor: {valor}')
 
 
+# Valores vación de un tipo de dato
+
+a = [] # array
+b = () # tupla
+c = set() #set
+d = {} # diccionario
+
+# Un solo elemento
+
+a = [1] #array
+b = (3,) #tupla
+c = {2} #Set
+
+# Funciones
+
+def saludar():
+    print('Hola Mundo')
+    
+def saludar(nombre):
+    print(f'Hola {nombre}')
 
 
+# Parámetros opcionales
+
+def saludar(nombre = 'Mundo'):
+    print(f'Hola {nombre}')
 
 
+def saludar(nombre, apellido = ""):
+    print(f'Hola {nombre} {apellido}')
 
+
+def saludar(nombre="Mundo", apellido = ""):
+    print(f'Hola {nombre} {apellido}')
+
+def saludar(nombre, apellido="", apellido_dos="", alias =""):
+    print(f'Hola {nombre} {apellido}')
+    
+# Parámetros ilimitados
+
+def saludar(*nombres):
+    print(f'Hola {nombres}')
+    
+def saludar(*nombres):
+    for nombre in nombres:
+        print(nombre, end=' ')
+
+print('Roberto', 'Carlos', 'Pedro')
+
+
+def saludar(*nombre, apellido):
+    print(nombre, apellido)
+    
+    
+def saludar(*nombre, apellido =""):
+    print(nombre, apellido)
+
+def saludar(**nombres):
+    print(nombres)
+
+def saludar(*nombre, **nombres):
+    print(nombre)
+    print(nombres)
+
+def sumar(num_uno = 5, num_dos =6):
+    return num_uno + num_dos
+
+def operaciones(num_uno = 5, num_dos =6):
+    suma = num_uno + num_dos
+    resta = num_uno - num_dos
+    mult = num_uno * num_dos
+    div = num_uno / num_dos
+    return suma, resta, mult, div
+
+_, _, multip, _ = operaciones()
+
+def sumar:
+    pass
 
 
 
